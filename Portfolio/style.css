@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #807d7d;
+  color: #333;
+}
+
+
+.navbar-brand{
+  padding-left: 2%;
+}
+
+.navbar-nav {
+  margin-left: 50%;
+}
+
+.navbar-nav a {
+  font-weight: bold;
+  color: black;
+margin: 2%;
+}
+
+.navbar-nav a:hover {
+  color: #66d7d1;
+}
+
+/* ------------------------------ start of HOme page -------------------------- */
+.container {
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  height: 600px;
+}
+
+.home {
+  margin-left: 8%;
+  margin-top: 10%;
+}
+
+.home h1 {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.home span {
+  color:  #ffd455;
+}
+
+.home p {
+  color: #555;
+  line-height: 22px;
+}
+
+.home a {
+  background-color: #ffd455;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.images {
+  margin-top: 5%;
+  width: 45%;
+  height: 50%;
+  position: absolute;
+
+  right: 100px;
+}
+
+.images img,
+.shape {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transform: bottom 1s, left 1s;
+}
+
+.images img {
+  padding-bottom: 1%;
+
+  width: 60%;
+  height: 300px;
+}
+
+.shape {
+  margin-left: 60px;
+  clip-path: polygon(50% 0%, 1% 98%, 99% 98%);
+  background-color:#ffd455;
+  width: 90%;
+  height: 300px;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover img {
+  left: 45%;
+}
+@media (max-width: 1238px) {
+  .images  {
+  display: none;
+ 
+}
+
+
+}
+.home a:hover{
+  background-color: #66d7d1;
+  box-shadow: 1px 1px 2px #ffd455;
+  
+}
+
+/* ------------------------------ end of HOme page -------------------------- */
+
+/* ---------------------------- start of About Section---------------------- */
+.about {
+
+
+  background-image: url(https://kidmedpeds.com/wp-content/uploads/2021/01/child-care-template-yellow-blob-shape.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  margin: 50px auto;
+  padding: 20px;
+
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-text h2 {
+  font-size: 50px;
+}
+
+.about-text h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.about-text p {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: black;
+  width: 90%;
+  height: 30%;
+  padding-left: 100px;
+}
+
+#spblack{
+  color:#ffd455;
+}
+@media (max-width: 600px) {
+  .about {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .about-text h1 {
+    font-size: 24px;
+  }
+
+  .about-text h2 {
+    font-size: 50px; color:black;
+  }
+ #spblack{
+    color:black;
+  }
+
+  .about-text p {
+    
+    font-size: 20px;
+  }
+}
+
+/* ---------------------------- end of About Section---------------------- */
+
+
+/* ---------------------------- start of Eduication  Section---------------------- */
+
+.educatiob-section {
+   background-image: url(https://kidmedpeds.com/wp-content/uploads/2021/01/child-care-template-tosca-blob-shape.svg); 
+  background-repeat: no-repeat;
+  background-position-x: left;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.eduic {
+/* background-color: rgb(236, 236, 236);
+box-shadow: 1px 1px 1px 1px yellow; */
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.eduic h5 {
+  color: black;
+  padding-top: 10%;
+}
+/* .educatiob-section:hover{
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+@media (max-width:600px) {
+  .eduic{
+    width: 90%;
+  }
+  .eduic h5 {
+    font-size: 18px;
+  }
+} */
+/* ---------------------------- end of eduication Section---------------------- */
+
+/* ---------------------------- start of project Section---------------------- */
+
+
+
+
+#my-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f9fa;
+}
+
+.containers {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.item {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 40px); /* 3 items per row with spacing */
+  margin: 10px;
+  min-width: 300px; /* Ensure items don't shrink too much */
+  max-width: 350px; /* Limit item width */
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+.text {
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: -200px;
+  left: 10%;
+  color: #facaca;
+}
+.text h3 {
+  color: black;
+}
+.text p{
+  color: black;
+}
+
+.item:hover .text {
+  top: 20%;
+}
+
+.item:hover > img {
+  cursor: pointer;
+  filter: blur(25px);
+}
+.item:hover {
+  cursor: pointer;
+}
+.item * {
+  transition: all 0.3s ease;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 310px;
+}
+
+.item a{
+  font-size: 40px;
+}
+
+
+@media (max-width: 1200px) {
+  .item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with less spacing */
+  }
+}
+
+@media (max-width: 992px) {
+  .item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+  }
+.containers{
+  height: 80%;
+}
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex: 1 1 calc(100% - 20px); /* 1 item per row */
+  }
+}
+
+
+/* ---------------------------- end of project Section---------------------- */
+
+/* ---------------------------- start of skills Section---------------------- */
+
+
+
+section#skills {
+  padding: 40px 20px;
+  
+}
+
+
+section#skills h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skills-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillss-cont {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.details {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 300px;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+
+.sub-title {
+  font-size: 30px;
+  color: #333;
+ 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 18px;
+
+}
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+article i {
+  color: green;
+  font-size: 20px;
+  padding-bottom: 18%;
+}
+
+article h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+article p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+.details:hover{
+  transform: translateY(-8px);
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px #ffd455;
+}
+
+@media (max-width: 768px) {
+  .details {
+      width: 50%;
+  }
+
+  section#skills h1 {
+      font-size: 28px;
+  }
+  
+  .sub-title {
+      font-size: 20px;
+  }
+  
+  article h3 {
+      font-size: 16px;
+  }
+  
+  article p {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  section#skills {
+      padding: 20px 10px;
+  }
+  
+  section#skills h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+  
+  .sub-title {
+      font-size: 18px;
+  }
+  
+  article {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  article i {
+      font-size: 18px;
+  }
+  
+  article h3 {
+      font-size: 14px;
+  }
+  
+  article p {
+      font-size: 12px;
+  }
+}
+
+
+/* --------------------------footer ---------------------------- */
+footer {
+  background-color:#cccccc;
+  width: 100%;
+}
+
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+
+}
+
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
+  
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialicons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialicons a:hover {
+  background-color: #3b3b3b;
+  transition: 0.5s;
+}
+
+.footercopy {
+  padding: 20px;
+  text-align: center;
+}
+#design:hover{
+  cursor: pointer;
+}
